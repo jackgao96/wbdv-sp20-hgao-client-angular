@@ -21,14 +21,11 @@
     </label>
   </li>
 </ul>
-
   <br/>
   Your answer: {{answer}}
   <br/>
   <span [hidden]="true">Correct answer:{{question.correct}} </span>
   <br/>
-  <span [hidden]="(grading && answer === question.correct) || grading === false">Answer is wrong</span>
-
-  <button (click)="grade()">Grade</button>
+<button (click)="submitAnswer()">submit answer</button>
 
 </div>

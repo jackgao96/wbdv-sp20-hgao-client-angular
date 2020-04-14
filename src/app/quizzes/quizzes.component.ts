@@ -25,7 +25,7 @@ export class QuizzesComponent implements OnInit {
           this.quizzes = quizzes;
           return quizzes.map(quiz => {
             console.log(quiz);
-            return fetch(`http://localhost:3000/api/quizzes/${quiz._id}/attempts`)
+            return fetch(`https://wbdv-sp20-hui-server-node.herokuapp.com/api/quizzes/${quiz._id}/attempts`)
               .then(response => response.json());
           });
         })
